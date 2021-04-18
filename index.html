@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Geseme ERP basado en Angular Microfrontends</title><meta name="description" content="página principal de entrada a las diferentes apps. que conforma en ERP de Geseme"/><meta name="keywords" content="GESEME, ERP"/><meta name="author" content="Dpto. T.I. Geseme"/><meta name="copyright" content="Geseme"/><meta name="robots" content="index,follow"/><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><meta http-equiv="X-UA-Compatible" content="ie=edge"><script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script><meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';"><meta name="importmap-type" content="systemjs-importmap"/><script type="systemjs-importmap">{
+      "imports": {
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.1/lib/system/single-spa.min.js"
+      }
+    }</script><link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.1/lib/system/single-spa.min.js" as="script" crossorigin="anonymous"><script type="systemjs-importmap" src="https://storage.googleapis.com/angular.microfrontends.app/importmap.json"></script><script type="systemjs-importmap">{
+        "imports": {
+          "@geseme-erp/root-config": "/geseme-erp-root-config.js",
+          "@geseme-erp/login": "/login/main-es2015.js",
+          "@geseme-erp/tecnicos": "/tecnicos/main.js",
+          "@geseme-erp/auth": "/auth/geseme-auth.js",
+          "@geseme-erp/navbar": "/navbar/main.js"
+        }
+      }</script><script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script><script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script><script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script><script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script><style>body {
+      margin: 0;
+    }
+    .welcome {
+      padding: 1em;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 70px;
+      background-color: #f5f5f5;
+    }</style></head><body><header><div class="welcome">Bienvenido al ERP de Geseme</div></header><template style="display: none;" id="single-spa-layout"><single-spa-router><route default><application name="@geseme-erp/login"></application></route><nav><span><application name="@geseme-erp/navbar"></application></span></nav><main><route path="/play"><application name="@angular-microfrontends/play"></application></route><route path="/tecnicos"><application name="@geseme-erp/tecnicos"></application></route><route path="/vigilancia"><application name="@geseme-erp/vigilancia"></application></route><route path="/admin"><application name="@geseme-erp/admin"></application></route></main><footer class="footer"><style>a.eussl_seal:hover .eussl_bubble { visibility:visible; } a.eussl_seal .eussl_bubble { visibility:hidden; width:194px; height:70px; margin-left:5px; border:1px solid #6c81b3; border-radius:0 0 3px 3px; overflow:hidden; margin-top:-2px; border-top:0; }</style><a class="eussl_seal eussltip" href="https://secure.europeanssl.eu" target="_blank"><img src="https://secure.europeanssl.eu/seal/*.geseme.com/200" alt="Secured by EuropeanSSL.eu"/><br/><iframe class="eussl_bubble" src="https://secure.europeanssl.eu/sealdetails/*.geseme.com/1"></iframe></a></footer></single-spa-router></template><script>System.import('@geseme-erp/root-config');</script><import-map-overrides-full></import-map-overrides-full></body></html>

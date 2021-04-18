@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@geseme-erp/root-config": "http://localhost:4201/geseme-erp-root-config.js",
+    "@geseme-erp/navbar": "http://localhost:4201/navbar/main.js"
+  }
+}
